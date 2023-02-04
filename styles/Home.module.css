@@ -1,23 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-
-  .intro{
-    margin-bottom: 300px;
-  }
-.intro h1{
-  font-family: 'Rubik Mono One', sans-serif;
-  font-size: 80px;
+.intro {
+  margin-bottom: 300px;
+}
+.intro h1 {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 100px;
   text-align: center;
   letter-spacing: 4px;
-  
 }
-.intro p{
-  font-family:  sans-serif;
-font-weight: 200;
-text-transform: uppercase; 
-text-align: center;
-letter-spacing: 5px;
-
+.intro p {
+  font-family: sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 21px;
 }
 .main {
   display: flex;
@@ -26,6 +24,7 @@ letter-spacing: 5px;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+ 
 }
 
 .description {
@@ -128,9 +127,8 @@ letter-spacing: 5px;
 .logo,
 .thirteen {
   position: relative;
- 
 }
-.logo{
+.logo {
   color: aliceblue;
 }
 
@@ -204,7 +202,6 @@ letter-spacing: 5px;
     padding: 4rem;
   }
 
-  
   .card {
     padding: 1rem 2.5rem;
   }
@@ -267,13 +264,13 @@ letter-spacing: 5px;
     );
     z-index: 1;
   }
-  .intro h1{
-font-size: 60px;
+  .intro h1 {
+    font-size: 60px;
   }
-  .intro p{
+  .intro p {
     font-size: 15px;
   }
-  .code{
+  .code {
     display: none;
   }
 }

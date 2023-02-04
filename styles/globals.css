@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
 
 
 :root {
@@ -111,4 +112,8 @@ a {
   html {
     color-scheme: dark;
   }
+}
+.header{
+  font-family: "Rubik Mono One", sans-serif;
+
 }
