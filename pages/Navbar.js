@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import Logo from "../public/logof.png"
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -8,7 +7,6 @@ export default function Navbar() {
       <nav className="bg-black px-2 sm:px-4 py-2.5  fixed w-full z-20 top-0 left-0   ">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <a href="https://flowbite.com/" className="flex items-center">
-            
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white uppercase">
               Ascend
             </span>
@@ -16,10 +14,12 @@ export default function Navbar() {
           <div className="flex md:order-2">
             <button
               type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl  font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 capitalize"
             >
-              Get started
+              Collaborate with us{" "}
+              <span class="animate-ping absolute inline-flex h-5 w-5 rounded-full bg-slate-100 opacity-100"></span>
             </button>
+
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
@@ -49,37 +49,49 @@ export default function Navbar() {
           >
             <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
               <li>
-                <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                <Link
+                  href="/"
+                  className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white cursor-pointer	uppercase"
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                <Link
+                  href="services"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 font-bold hover:text-blue-600 delay-200	cursor-pointer	uppercase"
+                  aria-current="page"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                <Link
+                  href="projects"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 font-bold hover:text-blue-600 delay-200	cursor-pointer	uppercase"
+                  aria-current="page"
                 >
-                  Contact
-                </a>
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="about us"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 font-bold hover:text-blue-600 delay-200	cursor-pointer	uppercase"
+                  aria-current="page"
+                >
+                  About us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="Contact"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 font-bold hover:text-blue-600 delay-200	cursor-pointer	uppercase"
+                  aria-current="page"
+                >
+                  Contact us
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,11 +1,15 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
+  .intro{
+    margin-bottom: 300px;
+  }
 .intro h1{
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 80px;
   text-align: center;
   letter-spacing: 4px;
+  
 }
 .intro p{
   font-family:  sans-serif;
@@ -13,6 +17,7 @@ font-weight: 200;
 text-transform: uppercase; 
 text-align: center;
 letter-spacing: 5px;
+
 }
 .main {
   display: flex;
@@ -199,13 +204,7 @@ letter-spacing: 5px;
     padding: 4rem;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
-
+  
   .card {
     padding: 1rem 2.5rem;
   }
@@ -267,6 +266,15 @@ letter-spacing: 5px;
       rgb(var(--background-end-rgb)) 40%
     );
     z-index: 1;
+  }
+  .intro h1{
+font-size: 60px;
+  }
+  .intro p{
+    font-size: 15px;
+  }
+  .code{
+    display: none;
   }
 }
 
