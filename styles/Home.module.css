@@ -124,13 +124,7 @@
   transform: translateZ(0);
 }
 
-.logo,
-.thirteen {
-  position: relative;
-}
-.logo {
-  color: aliceblue;
-}
+
 
 .thirteen {
   display: flex;
