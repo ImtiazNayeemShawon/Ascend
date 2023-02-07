@@ -12,13 +12,10 @@ export default function Navbar() {
             </span>
           </a>
           <div className="flex md:order-2">
-            <button
-              type="button"
-              class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl  font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 capitalize"
-            >
+            <Link href="JoinOurTeam" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl  font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 capitalize">
               Join our team{" "}
               <span class="animate-ping absolute inline-flex h-5 w-5 rounded-full bg-slate-100 opacity-100"></span>
-            </button>
+            </Link>
           </div>
           <div
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
