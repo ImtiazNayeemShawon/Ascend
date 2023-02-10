@@ -7,13 +7,9 @@ import PersonalInfo from "./private/PersonalInfo";
 
 export default function JoinOurTeam(props) {
   const [showPersonalInfo, setPersonalinfo] = useState(false);
-  const [reviewlInfo, setReviewinfo] = useState(false);
 
   const handlePersonalInfo = () => {
     setPersonalinfo(true);
-  };
-  const handleReviewInfo = () => {
-    setReviewinfo(true);
   };
 
   return (
@@ -61,7 +57,8 @@ export default function JoinOurTeam(props) {
 
                 <p className="text-base font-normal text-gray-100 dark:text-gray-400">
                   Chance to participate in many olympiads as a team, such as
-                  BDMO, BPHO, BIO, and Robotics Olympiad.
+                  BDMO, BPHO, BIO, and Robotics Olympiad programming
+                  competetion.
                 </p>
               </div>
             </li>
@@ -210,11 +207,11 @@ export default function JoinOurTeam(props) {
               </div>
               <div className="mt-3 sm:pr-8">
                 <h3 className="text-lg font-semibold text-yellow-300 dark:text-white">
-                  Make a identity
+                  Make your identity
                 </h3>
 
                 <p className="text-base font-normal text-gray-100 dark:text-gray-400">
-                  You can make your own identity by working with ascend team
+                  make your own identity by working with ascend team
                 </p>
               </div>
             </li>
@@ -224,7 +221,7 @@ export default function JoinOurTeam(props) {
           <div>
             <div className=" ">
               <h1 className="text-center text-xl uppercase font-bold p-4 bg-slate-600 rounded">
-                join our team by complete 3 step{" "}
+                join our team by complete 2 step{" "}
                 <span className="text-4xl text-yellow-300">!</span>
               </h1>
               <div>
@@ -251,11 +248,17 @@ export default function JoinOurTeam(props) {
                     </svg>
                   </li>
                   <li className="flex items-center max-sm:mt-10">
-                    <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+                    <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400 text-gray-100">
                       2
                     </span>
-                    Personal{" "}
-                    <span className="hidden sm:inline-flex sm:ml-2">Info</span>
+
+                    <span
+                      className="hidden sm:inline-flex sm:ml-2"
+                      style={setPersonalinfo ? { color: "white" } : null}
+                    >
+                      {" "}
+                      Personal Info
+                    </span>
                     <svg
                       aria-hidden="true"
                       className="w-4 h-4 ml-2 sm:ml-4"
@@ -272,12 +275,6 @@ export default function JoinOurTeam(props) {
                       />
                     </svg>
                   </li>
-                  <li className="flex items-center max-sm:mt-10">
-                    <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
-                      3
-                    </span>
-                    Review and submit
-                  </li>
                 </ol>
                 {showPersonalInfo ? <PersonalInfo /> : <ResumeUploder />}
 
@@ -285,7 +282,7 @@ export default function JoinOurTeam(props) {
                   onClick={handlePersonalInfo}
                   className="bg-gray-900 text-white font-bold p-3 w-44 rounded mt-10 m-auto  hover:bg-white duration-200 hover:text-gray-900 block"
                 >
-                  Next
+                  {showPersonalInfo ? <p> Done </p> : <p>Next</p>}
                 </button>
               </div>
             </div>
